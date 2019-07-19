@@ -8,6 +8,7 @@ Modify the paths in test.py, and download the test data and checkpoint file usin
 
 # Citation
 
+```
 @InProceedings{Dogan_2019_CVPR_Workshops,
 author = {Dogan, Berk and Gu, Shuhang and Timofte, Radu},
 title = {Exemplar Guided Face Image Super-Resolution Without Facial Landmarks},
@@ -15,3 +16,4 @@ booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVP
 month = {June},
 year = {2019}
 }
+```
