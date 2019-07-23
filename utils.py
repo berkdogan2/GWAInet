@@ -101,6 +101,9 @@ def upsample_EDSR(x,scale=2,features=64,activation=False,bias=True):
     return x
 
 def tf_warp3(img, flows, H, W):
+"""
+https://github.com/tensorflow/models/blob/master/research/transformer/spatial_transformer.py
+"""
     with tf.variable_scope('warping_function'):
         shape = img.get_shape().as_list()
         num_batch = tf.shape(img)[0]
@@ -183,6 +186,9 @@ def tf_warp3(img, flows, H, W):
     return output
 
 def repeat(x, n_repeats):
+"""
+https://github.com/tensorflow/models/blob/master/research/transformer/spatial_transformer.py
+"""
     with tf.variable_scope('repeat'):
         rep = tf.transpose(
             tf.expand_dims(tf.ones(shape=tf.stack([n_repeats, ])), 1), [1, 0])
